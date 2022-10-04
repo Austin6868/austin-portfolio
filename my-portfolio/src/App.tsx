@@ -5,7 +5,7 @@ import './App.css';
 function App() {
   return (
     <div>
-      <span>This is my site</span>
+      <span className="text-lg text-red-800">This is my site</span>
     </div>
   );
 }
