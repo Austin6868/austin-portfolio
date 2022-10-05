@@ -1,12 +1,21 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Homepage from "./pages/Homepage";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-function App() {
+function App(){
   return (
-    <div>
-      <span className="text-lg text-red-800">This is my site</span>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Homepage />}>
+          <Route index element={<Homepage />} />
+          <Route path="blogs" element={<Homepage />} />
+          <Route path="contact" element={<Homepage />} />
+          <Route path="*" element={<Homepage />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 
