@@ -10,7 +10,7 @@ import bgImage from "../Assets/BgMainImage.svg"
 export default function Background(){
     return(
         <div className="fixed w-screen h-max inset-0 bg-black transition-opacity">
-            <img className = "blur-2xl" src={bgImage}></img>
+            <img className = "blur-3xl" src={bgImage}></img>
         </div>
     )
 }
