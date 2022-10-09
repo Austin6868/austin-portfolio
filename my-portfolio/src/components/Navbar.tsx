@@ -42,6 +42,11 @@ function Navbar(){
             <div className="hidden lg:block lg:ml-12 text-xl font-normal text-opacity-75">
               <Link to="/about">About</Link>
             </div>
+            <div className="lg:hidden space-y-2">
+              <div className="w-8 h-0.5 bg-gray-600"></div>
+              <div className="w-8 h-0.5 bg-gray-600"></div>
+              <div className="w-8 h-0.5 bg-gray-600"></div>
+            </div>
           </div>
         </div>
       </div>
