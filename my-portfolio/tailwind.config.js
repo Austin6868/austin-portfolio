@@ -5,7 +5,11 @@ module.exports = {
     'bg-slate-900',
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'background': "url('./Assets/BgMainImage.svg')",
+      },
+    },
   },
   plugins: [],
 }

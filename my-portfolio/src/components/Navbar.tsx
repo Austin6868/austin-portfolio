@@ -1,14 +1,14 @@
 import React from 'react';
 import logo from './logo.svg';
 import { Link } from "react-router-dom";
-import { Menu, MenuItem, MenuButton } from "@szhsin/react-menu";
+import { Menu, MenuItem, MenuButton, SubMenu } from "@szhsin/react-menu";
 import "@szhsin/react-menu/dist/index.css";
 import "@szhsin/react-menu/dist/transitions/slide.css";
 
 function Navbar(){
 
     return(
-        <header className="absolute z-10 w-full h-20 flex items-center shadow-md nav-background">
+      <header className="fixed z-10 w-full h-20 flex items-center shadow-md nav-background">
       <div className="w-full text-white flex justify-content-center pl-5 lg:pl-12 pr-5 lg:pr-12 items-center flex-row">
         <div className="w-full flex flex-row justify-between">
           <Link className="text-3xl font-semibold" to="/">
@@ -17,13 +17,15 @@ function Navbar(){
           <div className="flex items-center space-x-16">
             <div className="hidden lg:block lg:ml-12 text-xl font-normal text-opacity-75">
               <Menu menuButton={<MenuButton>Projects</MenuButton>} transition>
-                <span className="pl-1 font-bold">🚀 Finished</span>
-                <MenuItem>court-booking-app</MenuItem>
-                <MenuItem>instructions+</MenuItem>
-                <MenuItem>rpg-game-project</MenuItem>
-                <span className="pl-1 font-bold">🚧 Under Construction</span>
-                <MenuItem>votingbuck</MenuItem>
-                <MenuItem>wot-aggregator</MenuItem>
+                <SubMenu label="🚀 Finished">
+                  <MenuItem>court-booking-app</MenuItem>
+                  <MenuItem>instructions+</MenuItem>
+                  <MenuItem>rpg-game-project</MenuItem>
+                </SubMenu>
+                <SubMenu label="🚧 Under Construction">
+                  <MenuItem>votingbuck</MenuItem>
+                  <MenuItem>wot-aggregator</MenuItem>
+                </SubMenu>
               </Menu>
             </div>
             <div className="hidden lg:block lg:ml-12 text-xl font-normal text-opacity-75">
