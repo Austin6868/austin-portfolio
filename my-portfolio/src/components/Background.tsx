@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { Menu, MenuItem, MenuButton } from "@szhsin/react-menu";
 import "@szhsin/react-menu/dist/index.css";
 import "@szhsin/react-menu/dist/transitions/slide.css";
-import bgImage from "../Assets/BgMainImage.svg"
+import bgImage from "../assets/BgMainImage.svg"
 
 
 export default function Background(){

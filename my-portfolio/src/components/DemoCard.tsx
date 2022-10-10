@@ -16,7 +16,7 @@ function importAll(r: any) {
 
   }
 
-const images = importAll(require.context('../Assets/', false, /\.(png|jpe?g|svg)$/));
+const images = importAll(require.context('../assets/', false, /\.(png|jpe?g|svg)$/));
 console.log(images)
 
 export default function Example() {
