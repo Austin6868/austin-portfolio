@@ -26,7 +26,7 @@ export default function Example() {
             <div className="card-body">
                 <span className="text-3xl">Court booking app</span>
                 <p>Tech Stack</p>
-                <div className="flex space-x-12">
+                <div className="flex space-x-12 overflow-x-auto">
                 {
                      techList.map((item)=> <img className="h-10" src={images[item + ".svg"]}/>)
                 }   
