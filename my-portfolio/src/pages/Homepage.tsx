@@ -44,12 +44,18 @@ function Homepage(){
                     </ScrollPage>
                     <ScrollPage>
                         <Animator animation={batch(Fade(), Sticky(), MoveIn(-500, 0))}>
-                        <Card/>
+                        <Card
+                            title={"Court Booking App"}
+                            techList={["Django", "Bootstrap", "SQLite", "AWS"]}
+                        />
                         </Animator>
                     </ScrollPage>
                     <ScrollPage>
                         <Animator animation={batch(Fade(), Sticky(), MoveIn(-500, 0))}>
-                        <Card/>
+                        <Card
+                            title={"Instructions+"}
+                            techList={["NodeJS", "SwiftUI", "MongoDB", "AWS"]}
+                        />
                         </Animator>
                     </ScrollPage>
                     <ScrollPage>
