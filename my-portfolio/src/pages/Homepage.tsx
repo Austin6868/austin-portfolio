@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import { Animator, ScrollContainer, ScrollPage, batch, Fade, FadeIn, FadeOut, Move, MoveIn, MoveOut, Sticky, StickyIn, StickyOut, Zoom, ZoomIn, ZoomOut } from "react-scroll-motion";
 import Card from "../components/DemoCard";
 import Background from "../components/Background"
+import { TypeAnimation } from 'react-type-animation';
 
 function Homepage(){
     const ZoomInScrollOut = batch(StickyIn(), FadeIn(), ZoomIn());
@@ -13,8 +14,27 @@ function Homepage(){
                 <ScrollContainer>
                     <ScrollPage>
                         <Animator animation={batch(Fade(), Sticky(), MoveOut(0, -200))}>
-                        <span style={{ fontSize: "70px" }}>Scroll Down</span>
-                        <div className ="animate-bounce inline-block" style={{ fontSize: "70px" }}> &nbsp;⬇️ </div>
+                        <TypeAnimation
+                            sequence={[
+                                'Hi:)', // Types 'One'
+                                1000, // Waits 1s
+                                'my name is Austin:)', // Deletes 'One' and types 'Two'
+                                2000, // Waits 2s
+                                "I'm a software engineer 💻", // Types 'Three' without deleting 'Two'
+                                2000,
+                                "software / business student 👨‍🎓",
+                                2000,
+                                "scroll down ⬇️",
+                                2000,
+                                () => {
+                                console.log('Done typing!'); // Place optional callbacks anywhere in the array
+                                }
+                            ]}
+                            wrapper="div"
+                            cursor={true}
+                            repeat={Infinity}
+                            style={{ fontSize: '7em' }}
+    />
                         </Animator>
                     </ScrollPage>
                     <ScrollPage>
@@ -37,7 +57,7 @@ function Homepage(){
                         <span style={{ fontSize: "40px" }}>Done</span>
                         <br/>
                         <span style={{ fontSize: "30px" }}>
-                            There's FadeAnimation, MoveAnimation, StickyAnimation, ZoomAnimation
+                            Check out nav bar:)
                         </span>
                         </Animator>
                     </ScrollPage>
