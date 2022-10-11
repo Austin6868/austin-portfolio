@@ -19,8 +19,8 @@ console.log(images)
 export default function Example(props: any) {
     
     return (
-        <div className="relative w-[80vw] h-[70vh]">
-            <div className="absolute -inset-0.5 bg-gradient-to-r from-sky-200 to-sky-400 rounded-lg blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-tilt"></div>
+        <div className="relative group w-[80vw] h-[70vh]">
+            <div className="absolute -inset-0.5 bg-gradient-to-r from-sky-200 to-sky-400 rounded-xl blur-xl opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-tilt"></div>
             <div className="relative rounded-xl bg-slate-800 flex-col h-full items-center pt-6">
                 <div className="text-3xl text-slate-100 w-fit">{props.title}</div>
                 <div className="text-slate-100">Tech Stack</div>
