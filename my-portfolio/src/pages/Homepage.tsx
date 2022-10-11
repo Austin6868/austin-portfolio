@@ -33,7 +33,7 @@ function Homepage(){
                             wrapper="div"
                             cursor={true}
                             repeat={Infinity}
-                            style={{ fontSize: '7em' }}
+                            style={{ fontSize: '4em' }}
     />
                         </Animator>
                     </ScrollPage>
