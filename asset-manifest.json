@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/austin-portfolio/static/css/main.8081bba3.css",
-    "main.js": "/austin-portfolio/static/js/main.2164a4bb.js",
+    "main.css": "/austin-portfolio/static/css/main.e6ddbb15.css",
+    "main.js": "/austin-portfolio/static/js/main.b16e4067.js",
     "static/js/787.128fc6e9.chunk.js": "/austin-portfolio/static/js/787.128fc6e9.chunk.js",
     "static/media/SQLite.svg": "/austin-portfolio/static/media/SQLite.850581fab6a562251e07.svg",
     "static/media/MongoDB.svg": "/austin-portfolio/static/media/MongoDB.4d0524e8507975bf9f23.svg",
@@ -12,12 +12,12 @@
     "static/media/SwiftUI.svg": "/austin-portfolio/static/media/SwiftUI.eb8473891521881add78.svg",
     "static/media/Bootstrap.svg": "/austin-portfolio/static/media/Bootstrap.3a162f65200426203695.svg",
     "index.html": "/austin-portfolio/index.html",
-    "main.8081bba3.css.map": "/austin-portfolio/static/css/main.8081bba3.css.map",
-    "main.2164a4bb.js.map": "/austin-portfolio/static/js/main.2164a4bb.js.map",
+    "main.e6ddbb15.css.map": "/austin-portfolio/static/css/main.e6ddbb15.css.map",
+    "main.b16e4067.js.map": "/austin-portfolio/static/js/main.b16e4067.js.map",
     "787.128fc6e9.chunk.js.map": "/austin-portfolio/static/js/787.128fc6e9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8081bba3.css",
-    "static/js/main.2164a4bb.js"
+    "static/css/main.e6ddbb15.css",
+    "static/js/main.b16e4067.js"
   ]
 }
